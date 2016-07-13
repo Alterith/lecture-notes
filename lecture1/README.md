@@ -35,7 +35,7 @@
   programs by creating a process and making available to it all the
   resources it needs to run while providing protection an isolation
 
-## Why take an Operating Systems class ##
+## Why take an Operating Systems class? ##
 
 - Will help you understand how computer systems work by showing you
   how software and hardware interact: you will see that there is no
@@ -79,6 +79,9 @@
     OS and hardware are protected from user programs by controlling
     the translation from program's address space to the physical
     address space
+
+## A fundamental OS mechanism ##
+
 - **Context switch**
 
 ## Dual mode operation ##
