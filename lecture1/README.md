@@ -71,7 +71,7 @@
 ## Four fundamental OS concepts ##
 - **Privileged (Kernel) vs. User Mode**: the hardware can run in two distinct
     modes
-- **Address space**: the memory addresses that a an executing program
+- **Address space**: the memory addresses that an executing program
     sees differ from physical addresses
 - **Process:** an instance of an executing program consisting of an
     address space as well as one or more threads of control	
@@ -86,7 +86,7 @@
 
 ## Dual mode operation ##
 
-- When a machine runs in the previliged mode, the sofware has access
+- When a machine runs in the privileged mode, the software has access
    to all the hardware -- this is when the kernel is running
 - When a machine runs in user mode, the access to hardware is
   restricted -- this is when the user programmes are running
@@ -100,16 +100,16 @@
 
 - When an executable file for a user program is being loaded into
   memory, the address space for the running instance of the program is
-  created an the thread of control is transfered to the user
+  created an the thread of control is transferred to the user
   program. After that, OS provides services to the running program and
   protects itself and hardware from it.
 
 - Recall: Source file vs. Executable vs. Program in memory
 
-- Recall: the instruction execution cycle (in computer achitecture
+- Recall: the instruction execution cycle (in computer architecture
   class your thought of it as using physical memory)
 
-- Adress space of the program is made up of four majour segments:
+- Address space of the program is made up of four major segments:
   code, data, heap, stack
 
 - All the addresses that the running program presents to the CPU are
