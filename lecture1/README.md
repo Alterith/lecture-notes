@@ -148,7 +148,9 @@
 - Protection is achieved through address translation (from virtual
   addresses the process presents to the CPU to physical addresses that
   the CPU uses to fetch instructions and data)
-- Simple address translation mechanism: base and bound
+- Simple address translation mechanism: base and bound:
+![Base and bound protection](physmem.png)
+
 
 ## Context switch ##
 
