@@ -24,7 +24,7 @@
     persistent storage devices;
   - Processes abstract the CPU as well as the two above.
 
-(./abstractions-os.pdf)
+![Abstractions provided by an operating system](./abstractions-os.pdf)
 
 - An operating system's protection mechanism provides the basis for
   security in computer systems -- you couldn't write secure
