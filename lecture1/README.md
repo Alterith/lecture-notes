@@ -123,11 +123,15 @@
 
 - Recall: Source file vs. Executable vs. Program in memory
 
+- Address space of the program in memory is made up of four major
+  segments: code, data, heap, stack
+
+![Address space](address_space.png)
+
 - Recall: the instruction execution cycle (in computer architecture
   class your thought of it as using physical memory)
 
-- Address space of the program is made up of four major segments:
-  code, data, heap, stack
+
 
 - All the addresses that the running program presents to the CPU are
   virtual (they are not related to the physical addresses of bytes in
