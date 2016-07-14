@@ -22,10 +22,8 @@
   - File systems abstract I/O and persistent storage devices;
   - Virtual memory abstracts main memory as well as I/O and
     persistent storage devices;
-  - Processes abstract the CPU as well as the two above.
-
-![Abstractions provided by an operating system](abstractions-os.png)
-
+  - Processes abstract the CPU as well as the two
+    above.![Abstractions provided by an operating system](abstractions-os.png)
 - An operating system's protection mechanism provides the basis for
   security in computer systems -- you couldn't write secure
   applications if the operating system was not providing its
