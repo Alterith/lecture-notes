@@ -43,10 +43,6 @@
 - Operating systems are being written for all kinds of hardware
   (phones, cars, buildings, etc.).
 
-- An operating system enables running of application
-  programs by creating a process and making available to it all the
-  resources it needs to run while providing protection an isolation.
-
 - Thanks to an operating system running on a divice, you can write an
   application to run on the divice
   - without knowing how the divice works;
