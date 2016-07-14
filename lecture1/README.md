@@ -162,7 +162,7 @@
   - Trap (exception)
 - How does kernel know which instruction to run upon a switch from a
   user process?: Interrupt vector:
-![Interrupt vector](interrupVector.png)  
+![Interrupt vector](interruptVector.png)  
 
 ## Linux commands to explore ##
 
