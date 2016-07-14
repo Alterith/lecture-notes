@@ -24,10 +24,14 @@
     persistent storage devices;
   - Processes abstract the CPU as well as the two
     above.![Abstractions provided by an operating system](abstractions-os.png)
+	
 - An operating system's protection mechanism provides the basis for
   security in computer systems -- you couldn't write secure
   applications if the operating system was not providing its
-  protection services.
+  protection services (thus, you can write an application that
+  requieres a user to enter a password without worrying that another
+  application running at the same time will have access to the entered
+  password).
 
 - Operating systems make advances in hardware available to
   applications (for example, Android and iOS make smart-phone hardware
