@@ -33,6 +33,9 @@
   application running at the same time will have access to the entered
   password).
 
+- An operating system allows you to write applications that need to
+  communicate with other applications.
+
 - Operating systems make advances in hardware available to
   applications (for example, Android and iOS make smart-phone hardware
   available to apps).
