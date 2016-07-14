@@ -24,6 +24,8 @@
     persistent storage devices;
   - Processes abstract the CPU as well as the two above.
 
+(../abstractions-os.pdf)
+
 - An operating system's protection mechanism provides the basis for
   security in computer systems -- you couldn't write secure
   applications if the operating system was not providing its
@@ -36,7 +38,7 @@
 - Operating systems are being written for all kinds of hardware
   (phones, cars, buildings, etc.).
 
-- In summary: an operating system enables running of application
+- An operating system enables running of application
   programs by creating a process and making available to it all the
   resources it needs to run while providing protection an isolation.
 
