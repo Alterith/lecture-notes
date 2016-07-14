@@ -8,13 +8,13 @@
 
 - An operating system (i.e., the kernel) fundamentally does three
   things:
-  - provides to application programs simple and convenient
+  1. provides to application programs simple and convenient
   abstractions of and interfaces to hardware (you don't have to worry
   about hardware when you write your applications);
-  - protects applications from each other, hardware from applications,
+  2. protects applications from each other, hardware from applications,
     and itself from applications (your buggy application cannot
     clobber other applications, the hardware, or the kernel);
-  - provides a way for applications to talk to each other (your
+  3. provides a way for applications to talk to each other (your
     application can talk to other applications).
 
 - An operating system provides convenient abstractions for hardware
@@ -70,11 +70,11 @@
 
 ## Course structure ##
 
-- Introduction to main concepts (HW0)
-- Processes (HW1)
-- Concurrency and threads; scheduling
-- Virtual memory (HW2)
-- File systems and persistent storage
+1. Introduction to main concepts (HW0)
+2. Processes (HW1)
+3. Concurrency and threads; scheduling
+4. Virtual memory (HW2)
+5. File systems and persistent storage
 
 - We will pretty closely follow the prescribed textbook
 
