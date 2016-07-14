@@ -24,7 +24,7 @@
     persistent storage devices;
   - Processes abstract the CPU as well as the two above.
 
-![Abstractions provided by an operating system](abstractions-os.pdf)
+![Abstractions provided by an operating system](abstractions-os.png)
 
 - An operating system's protection mechanism provides the basis for
   security in computer systems -- you couldn't write secure
@@ -42,9 +42,9 @@
   programs by creating a process and making available to it all the
   resources it needs to run while providing protection an isolation.
 
-- Thanks to an operating system running on a divise, you can write an
+- Thanks to an operating system running on a divice, you can write an
   application to run on the divice
-  - without knowing how the divice works on the hardware level;
+  - without knowing how the divice works;
   - without worring about your application being corrupted by other
     applications or your application corrupting other applications,
     hardware, or the operating system;
