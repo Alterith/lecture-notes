@@ -2,38 +2,52 @@
 
 ## Role of an operating system ##
 
-- "Operating system" has two meanings: the entire suit of software
-  that comes with your computer and the kernel; in this class by
-  "operating system" we most of the time mean the kernel
+- "Operating system" has two meanings: (1) the entire suit of software
+  that comes with your computer and (2) the kernel; in this class, by
+  "operating system" we most of the time mean the kernel.
 
 - An operating system (i.e., the kernel) fundamentally does three
   things:
   - provides to application programs simple and convenient
-  abstractions of hardware
-  - protects hardware from applications and applications from each
-    other
-  - provides a way for running applications to talk to each other
+  abstractions of and interfaces to hardware (you don't have to worry
+  about hardware when you write your applications);
+  - protects applications from each other, hardware from applications,
+    and itself from applications (your buggy application cannot
+    clobber other applications, the hardware, or the kernel);
+  - provides a way for applications to talk to each other (your
+    application can talk to other applications).
 
 - An operating system provides convenient abstractions for hardware
   resources:
-  - File systems abstract I/O and persistent storage devices
-  - Virtual memory abstracts both main memory as well as I/O and
-    persistent storage devices
-  - Processes abstract the CPU as well as the two above
+  - File systems abstract I/O and persistent storage devices;
+  - Virtual memory abstracts main memory as well as I/O and
+    persistent storage devices;
+  - Processes abstract the CPU as well as the two above.
 
 - An operating system's protection mechanism provides the basis for
-  security in computer systems
+  security in computer systems -- you couldn't write secure
+  applications if the operating system was not providing its
+  protection services.
 
 - Operating systems make advances in hardware available to
   applications (for example, Android and iOS make smart-phone hardware
-  available to apps)
+  available to apps).
 
 - Operating systems are being written for all kinds of hardware
-  (phones, cars, buildings, etc.)
+  (phones, cars, buildings, etc.).
 
 - In summary: an operating system enables running of application
   programs by creating a process and making available to it all the
-  resources it needs to run while providing protection an isolation
+  resources it needs to run while providing protection an isolation.
+
+- Thanks to an operating system running on a divise, you can write an
+  application to run on the divice
+  - without knowing how the divice works on the hardware level;
+  - without worring about your application being corrupted by other
+    applications or your application corrupting other applications,
+    hardware, or the operating system;
+  - being able to make your application communiacate with other
+    applications as needed.
 
 ## Why take an Operating Systems class? ##
 
