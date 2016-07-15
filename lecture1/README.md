@@ -29,7 +29,7 @@
   security in computer systems -- you couldn't write secure
   applications if the operating system was not providing its
   protection services (thus, you can write an application that
-  requieres a user to enter a password without worrying that another
+  requires a user to enter a password without worrying that another
   application running at the same time will have access to the entered
   password).
 
@@ -43,13 +43,13 @@
 - Operating systems are being written for all kinds of hardware
   (phones, cars, buildings, etc.).
 
-- Thanks to an operating system running on a divice, you can write an
-  application to run on the divice
-  - without knowing how the divice works;
-  - without worring about your application being corrupted by other
+- Thanks to an operating system running on a device, you can write an
+  application to run on the div-ice
+  - without knowing how the div-ice works;
+  - without worrying about your application being corrupted by other
     applications or your application corrupting other applications,
     hardware, or the operating system;
-  - being able to make your application communiacate with other
+  - being able to make your application communicate with other
     applications as needed.
 
 ## Why take an Operating Systems class? ##
@@ -90,8 +90,9 @@ For more, check (this post)[http://blog.regehr.org/archives/164].
 
 # Introduction to the Process #
 
-To give you a flavour what an OS can do for you, we'll explore how the
-OS implements protection. In doing so, we will cover the following:
+To give you a flavour of what an OS can do for you, we'll explore how
+the OS implements protection. In doing so, we will cover the
+following:
 
 ## Four fundamental OS concepts ##
 - **Privileged (Kernel) vs. User Mode (Dual mode operation)**: the
