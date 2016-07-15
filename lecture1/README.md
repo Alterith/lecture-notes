@@ -54,19 +54,22 @@
 
 ## Why take an Operating Systems class? ##
 
-- Will help you understand how computer systems work by showing you
+- It will help you understand how computer systems work by showing you
   how software and hardware interact: you will see that there is no
-  magic there
+  magic there.
 
-- Many important core concepts and design patterns of operating
-  systems come up in all kinds of computer systems
-  - concurrency
-  - protection
-  - interfaces and hiding complexity
-  - access to contested resources
+- Many important core concepts and design patterns used in building
+  operating systems come up in all kinds of computer systems. There
+  are
+  - concurrency;
+  - protection;
+  - interfaces and hiding complexity;
+  - access to contested resources.
 
-- Will make you a better user of an OS by showing you what goes on
-  under the hood
+- It will make you a better user of an OS by showing you what goes on
+  under the hood.
+
+For more, check (this post)[http://blog.regehr.org/archives/164].
 
 ## Course structure ##
 
@@ -76,26 +79,31 @@
 4. Virtual memory (HW2)
 5. File systems and persistent storage
 
-- We will pretty closely follow the prescribed textbook
+- We will pretty closely follow the prescribed textbook; lectures will
+  given you sufficient overview for you to be able to read detailed
+  explanations in the textbook.
 
-- 3 Homework Assignments: give you experience with systems programming
-- You need a GitHub account to submit homeworks
-- TAs will help you with homeworks
-
+- 3 Homework Assignments: will give you experience with systems
+  programming.
+- You need a GitHub account to submit homeworks.
+- TAs will help you with homeworks.
 
 # Introduction to the Process #
 
+To give you a flavour what an OS can do for you, we'll explore how the
+OS implements protection. In doing so, we will cover the following:
+
 ## Four fundamental OS concepts ##
-- **Privileged (Kernel) vs. User Mode**: the hardware can run in two distinct
-    modes
+- **Privileged (Kernel) vs. User Mode (Dual mode operation)**: the
+    hardware can run in two distinct modes.
 - **Address space**: the memory addresses that an executing program
-    sees differ from physical addresses
+    sees; these differ from physical addresses of the machine.
 - **Process:** an instance of an executing program consisting of an
-    address space as well as one or more threads of control	
+    address space as well as one or more threads of control.	
 - **Protection**:  user programs are protected from each other and the
     OS and hardware are protected from user programs by controlling
-    the translation from program's address space to the physical
-    address space
+    the translation from the program's address space to the physical
+    address space of the machine.
 
 ## A fundamental OS mechanism ##
 
@@ -104,20 +112,21 @@
 ## Dual mode operation ##
 
 - When a machine runs in the privileged mode, the software has access
-   to all the hardware -- this is when the kernel is running
+   to all the hardware -- this is when the kernel is running.
 - When a machine runs in user mode, the access to hardware is
-  restricted -- this is when the user programmes are running
+  restricted -- this is when user programmes are running.
 - User programs access hardware by issuing a system call to the
-  kernel, upon which the machine switches to the kernel mode
+  kernel, upon which the machine switches to the kernel mode and the
+  kernel carries out the request of the user program.
 - Certain instructions are prohibited to be executed in the user mode;
   an exception will be raised if a user program attempts to execute
-  such an instruction
+  such an instruction.
 
 ## Address space of a running program ##
 
 - When an executable file for a user program is being loaded into
   memory, the address space for the running instance of the program is
-  created an the thread of control is transferred to the user
+  created and the thread of control is transferred to the user
   program. After that, OS provides services to the running program and
   protects itself and hardware from it.
 
@@ -133,26 +142,30 @@
 
 - All the addresses that the running program presents to the CPU are
   virtual (they are not related to the physical addresses of bytes in
-  RAM)
+  RAM); before the CPU can run the instruction, virtual addresses have
+  to be translated to physical addresses, so that the CPU knows where
+  in physical memory to find the instruction and data to fetch.
 
 ## Process: address space plus a thread of control ##
 
 - Thread of control: the state of the program that can be represented
-  in the registers (PC, stack pointer, heap pointer, etc. -- depends
-  on the architecture) -- a thread is being executed if its state
-  **is** represented in the registers
+  in the registers (PC, stack pointer, etc. -- depends on the
+  architecture) -- a thread is being executed if its state **is**
+  represented in the registers.
 - A modern OS supports a concurrent execution of multiple processes by
-  switching between multiple threads of control
+  switching between multiple threads of control (this is called the
+  context switch).
 
 
 ## Protection ##
 
 - Protection is achieved through address translation (from virtual
   addresses the process presents to the CPU to physical addresses that
-  the CPU uses to fetch instructions and data)
-- Simple address translation mechanism: base and bound:
+  the CPU uses to fetch instructions and data).
+- Simple address translation mechanism -- base and bound:
 ![Base and bound protection](physmem.png)
-
+- This way, no process can access the physical memory allocated to
+  other processes or the kernel.
 
 ## Context switch ##
 
@@ -162,8 +175,8 @@
   - System call (syscall)
   - Interrupt
   - Trap (exception)
-- How does kernel know which instruction to run upon a switch from a
-  user process?: Interrupt vector:
+- How does the kernel know which instruction to run upon a switch from a
+  user process? -- Interrupt vector:
 ![Interrupt vector](interruptVector.png)  
 
 ## Linux commands to explore ##
