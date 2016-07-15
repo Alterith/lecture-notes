@@ -69,7 +69,7 @@
 - It will make you a better user of an OS by showing you what goes on
   under the hood.
 
-For more, check (this post)[http://blog.regehr.org/archives/164].
+For more, check [this post](http://blog.regehr.org/archives/164).
 
 ## Course structure ##
 
