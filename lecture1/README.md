@@ -184,5 +184,5 @@ following:
 
 `ps`
 
-## [https://github.com/WITS-COMS2001/vitamins/tree/master/week1](Vitamins for week 1) ##
+## [Vitamins for week 1](https://github.com/WITS-COMS2001/vitamins/tree/master/week1) ##
 
