@@ -183,3 +183,6 @@ following:
 ## Linux commands to explore ##
 
 `ps`
+
+## [https://github.com/WITS-COMS2001/vitamins/tree/master/week1](Vitamins for week 1) ##
+
