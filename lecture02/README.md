@@ -15,7 +15,7 @@
   user process? -- Interrupt vector:
 ![Interrupt vector](interruptVector.png)
 
-### Transfer from the user mode to the 
+### Transfer from the user mode to the kernel mode
 
 - Done by the kernel.
 - Four types:
