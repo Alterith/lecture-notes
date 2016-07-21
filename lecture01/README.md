@@ -168,21 +168,11 @@ following:
 - This way, no process can access the physical memory allocated to
   other processes or the kernel.
 
-## Context switch ##
-
-- Switching from executing one process to another; includes switching
-  between a user process and the kernel
-- Three types of mode transfer between a user process and the kernel
-  - System call (syscall)
-  - Interrupt
-  - Trap (exception)
-- How does the kernel know which instruction to run upon a switch from a
-  user process? -- Interrupt vector:
-![Interrupt vector](interruptVector.png)  
 
 ## Linux commands to explore ##
 
 `ps`
+
 `top`
 
 ## [Vitamins for week 1](https://github.com/WITS-COMS2001/vitamins/tree/master/week1) ##
