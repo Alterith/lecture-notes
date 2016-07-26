@@ -18,9 +18,7 @@ are buried in the programming language's run-time library.
 
 - application software / system software boundary;
 - the OS / user space boundary;
-- within the OS, we can separate out the portable kernel and the and
-  code that allows it to talk to particular hardware devices installed
-  on the system -- for example, device drivers;
+- the portable kernel / the software that deals with particular hardware boundary;
 - hardware / software.
 
 
@@ -190,7 +188,7 @@ store our data on persistent storage.
 
 5. I/O driver -- data transfer:
 
-- We've now crossed the portable kernel / device drivers boundary.
+- We've crossed the portable kernel / the software that deals with particular hardware boundary.
 
 - The kernel itself doesn't speak directly to the hardware devices;
      these is done to software called device drivers.
