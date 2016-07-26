@@ -21,7 +21,7 @@ are buried in the programming language's run-time library.
 - the portable kernel / the software that deals with particular hardware boundary;
 - hardware / software.
 
-![A kind of narrow band](abstractions-os.png)
+![A kind of narrow band](narrow-band.pdf)
 
 ## We'll use I/O and file systems as an example of these layers
 
