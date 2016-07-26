@@ -73,7 +73,7 @@ store our data on persistent storage.
 
 - Hard and soft links (will be discussed later).
 
-### Processes, files, and users are connected
+### Processes, file systems, and users are connected
 
 - Every process has a number of files open for reading and writing.
 
