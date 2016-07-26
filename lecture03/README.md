@@ -82,7 +82,7 @@ store our data on persistent storage.
 
 ### I/O layers
 
-1. High-level I/O -- streams:
+#### High-level I/O -- streams:
 
 - A file is represented as a stream; we have to open a stream before
   we can read from or write to it.
@@ -126,7 +126,7 @@ store our data on persistent storage.
     void rewind (FILE *stream)
 ```	
   
-2. Low-level I/O -- handles on file descriptors:
+#### Low-level I/O -- handles on file descriptors:
 
 -- We've now crossed the application software / system software boundary.
 
@@ -170,7 +170,7 @@ store our data on persistent storage.
 
 - Low-level I/O is much more powerful than high-level I/O
 
-3. Syscall -- registers:
+#### Syscall -- registers:
 
 - We've now crossed the OS / user space boundary.
 
@@ -186,14 +186,14 @@ store our data on persistent storage.
    - All the reads and writes on files change the inode corresponding
      to that file.
 
-5. I/O driver -- data transfer:
+#### I/O driver -- data transfer:
 
 - We've crossed the portable kernel / the software that deals with particular hardware boundary.
 
 - The kernel itself doesn't speak directly to the hardware devices;
      these is done to software called device drivers.
 
-6. Hardware -- disks, SSD, controllers, etc.
+#### Hardware -- disks, SSD, controllers, etc.
 
 - We've now crossed the software/hardware boundary.
 
