@@ -122,8 +122,8 @@ store our data on persistent storage.
 
 ```c
     int fseek(FILE *stream, long int offset, int whence);
-    long int ftell (FILE *stream)
-    void rewind (FILE *stream)
+    long int ftell (FILE *stream);
+    void rewind (FILE *stream);
 ```	
   
 #### Low-level I/O -- handles on file descriptors:
@@ -138,9 +138,9 @@ store our data on persistent storage.
     #include <sys/types.h>
 
 
-    int open (const char *filename, int flags [, mode_t mode])
-    int creat (const char *filename, mode_t mode)
-    int close (int filedes)
+    int open (const char *filename, int flags [, mode_t mode]);
+    int creat (const char *filename, mode_t mode);
+    int close (int filedes);
 ```
 
 - These numbers index into a file table, which contain all the
@@ -159,13 +159,13 @@ store our data on persistent storage.
 - Once a file is open can perform operations on it:
 
 ```c
-    ssize_t read (int filedes, void *buffer, size_t maxsize)
-	ssize_t write (int filedes, const void *buffer, size_t size)
+    ssize_t read (int filedes, void *buffer, size_t maxsize);
+	ssize_t write (int filedes, const void *buffer, size_t size);
 
-    off_t lseek (int filedes, off_t offset, int whence)
+    off_t lseek (int filedes, off_t offset, int whence);
 
-    int fsync (int fildes) 
-    void sync (void) 
+    int fsync (int fildes);
+    void sync (void);
 ```
 
 - Low-level I/O is much more powerful than high-level I/O
