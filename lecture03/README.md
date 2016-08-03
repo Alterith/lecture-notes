@@ -200,8 +200,13 @@ store our data on persistent storage.
 
 ## Linux commands to explore
 
-`ls`
-
-`mkdir`
+`pwd`
 
 `cd`
+
+`ls` (in particular, check out the `i` option)
+
+`ln`
+
+
+
