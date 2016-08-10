@@ -58,8 +58,9 @@ Here is a list of resources that you might find useful for learning
 how to write code with pthreads:
 
 - [Pthreads tutorial from LLNL](https://computing.llnl.gov/tutorials/pthreads/)
-- [An Introduction to Programming with Threads) by Andrew D. Birrel]
+- [An Introduction to Programming with Threads]
    (http://www.cs.wits.ac.za/~dmitry/coms2001/static/resources/035-Threads.pdf)
+   by Andrew D. Birrel
 - Chapters 11 & 12 from W. Richard Stevens and Stephen A. Rago
   [Advanced Programming in the Unix
   Environment](http://www.apuebook.com/), 3d edition (second edition is also fine).
