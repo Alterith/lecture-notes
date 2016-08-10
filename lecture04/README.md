@@ -18,6 +18,7 @@ How do we program this?
 
 - Accepting input from the user.
 - Blocking I/O.
+- Writing code for execution on multi-core architectures.
 
 ## Thread abstraction
 
@@ -35,12 +36,34 @@ code is bug-free.
 
 ## Thread data structures
 
+In a running program, threads share the code segment, the data
+segment, and the heap segment.  Each thread has it's own stack.
+
+Each stack has associated with it a Program Counter value and a Stack
+Pointer Value, which are stored in a TCB (Thread Control Block).
+
+![per-thread State and shared state](perThread.png)
+
 ## Thread life-cycle
 
-![Thread Life-Cycle](threadLifeCycle.png)
+![thread life-cycle](threadLifeCycle.png)
 
 ## Pthreads
 
+We will be using the
+[Pthreads library](https://en.wikipedia.org/wiki/POSIX_Threads) for
+writing threaded code in this course.
+
+Here is a list of resources that you might find useful for learning
+how to write code with pthreads:
+
+- [https://computing.llnl.gov/tutorials/pthreads/](Pthreads
+    tutorial from LLNL)
+- [http://www.cs.wits.ac.za/~dmitry/coms2001/static/resources/035-Threads.pdf](An
+   Introduction to Programming with Threads) by Andrew D. Birrel
+- Chapters 11 & 12 from W. Richard Stevens and Stephen A. Rago
+  [http://www.apuebook.com/](Advanced Programming in the Unix
+  Environment), 3d edition (second edition is also fine).
 
 
 ### Technical definition of concurrent code
