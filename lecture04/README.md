@@ -5,7 +5,7 @@
 We often want several activities in our program to go on at the same
 time.
 
-### Particualar example: Google Earth
+### Particular example: Google Earth
 
 We have to simultaneously do at least three things:
 - Accept input from the user;
@@ -57,13 +57,12 @@ writing threaded code in this course.
 Here is a list of resources that you might find useful for learning
 how to write code with pthreads:
 
-- [https://computing.llnl.gov/tutorials/pthreads/](Pthreads
-    tutorial from LLNL)
-- [http://www.cs.wits.ac.za/~dmitry/coms2001/static/resources/035-Threads.pdf](An
-   Introduction to Programming with Threads) by Andrew D. Birrel
+- [Pthreads tutorial from LLNL](https://computing.llnl.gov/tutorials/pthreads/)
+- [An Introduction to Programming with Threads) by Andrew D. Birrel]
+   (http://www.cs.wits.ac.za/~dmitry/coms2001/static/resources/035-Threads.pdf)
 - Chapters 11 & 12 from W. Richard Stevens and Stephen A. Rago
-  [http://www.apuebook.com/](Advanced Programming in the Unix
-  Environment), 3d edition (second edition is also fine).
+  [Advanced Programming in the Unix
+  Environment](http://www.apuebook.com/), 3d edition (second edition is also fine).
 
 
 ### Technical definition of concurrent code
