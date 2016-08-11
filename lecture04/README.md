@@ -12,18 +12,18 @@ We have to simultaneously do at least three things:
 - Get packets from the server across the network;
 - Render the images we've received from the server.
 
-How do we program this?
-
 ### General patterns where this is useful:
 
 - Accepting input from the user.
 - Blocking I/O.
 - Writing code for execution on multi-core architectures.
 
+How do we program this?
+
 ## Thread abstraction
 
 One way to write code that keeps multiple activities going on
-concurrently is as a set of threads, each threads executing code that
+concurrently is as a set of threads, each threads executing code
 pertaining to a single activity.
 
 A thread is a single execution sequence that represents a separately
