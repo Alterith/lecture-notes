@@ -1,22 +1,22 @@
 # Introduction to thread coordination
 
 - Sometimes multiple threads need to cooperate with each other to
-  accomplish a job; in this case we say, that we need to coordinate
-  the activity of the threads
+  accomplish a job; in this case, we say that we need to coordinate
+  the activity of the threads.
   
-- The easiest way to coordiate threads is through access the memory
-  all the treads share -- global memory and heap
+- The easiest way to coordiate threads is through accessing the memory
+  all the treads share -- static memory and heap.
 
-- The exact way to achieve such a coordination is not trivial
+- The exact mechanism to achieve thread coordination is not trivial.
 
 - In the lecture, we looked at the problems of thread coordination by
   writing various versions of the program in which two threads -- a
   producer thread and a consumer thread -- need to coordinate
   according to the following protocol:
-  - producer is putting lines of text into a shared buffer
-  - consumer takes lines of text out of the shared buffer
+  - producer is putting lines of text into a shared buffer;
+  - consumer takes lines of text out of the shared buffer;
   - each line produced by the producer has to be consumed exactly once
-    by the consumer
+    by the consumer.
 
 The code is
 [here](https://github.com/WITS-COMS2001/lecture-code/tree/master/thread-coordination). Take
